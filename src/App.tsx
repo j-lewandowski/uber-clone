@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/navbar/Navbar';
 
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -13,7 +13,6 @@ function App() {
         Uber clone
       </h1>
       <div className="w-screen h-full max-w-md bg-white md:max-h-[900px] md:m-8 md:rounded-3xl md:border-4 md:border-black relative">
-        Hello from Uber
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
