@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Uber;
+  src: url('fonts/UberMoveMedium.otf');
+}
+
+@font-face {
+  font-family: Uber-bold;
+  src: url('fonts/UberMoveBold.otf');
+}
