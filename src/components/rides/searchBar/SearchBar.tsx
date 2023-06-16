@@ -13,7 +13,7 @@ function SearchBar() {
 
   const lastLocations = [
     { name: 'Poznań' },
-    { name: 'Biedronka', address: 'Stansiława Woźniaka 1, Kórnik' },
+    { name: 'Biedronka', address: 'Stanisława Woźniaka 1, Kórnik' },
   ]; // Dummy Data
 
   return (

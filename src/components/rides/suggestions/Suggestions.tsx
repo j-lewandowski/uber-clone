@@ -8,7 +8,7 @@ function Suggestions() {
   return (
     <div className="flex flex-col mx-4">
       <div className="flex justify-between">
-        <p className="font-uberBold">Suggestions</p>
+        <p className="font-uberBold text-xl">Suggestions</p>
         <Link to="/services" className="font-uber">
           See all
         </Link>

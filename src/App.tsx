@@ -10,7 +10,7 @@ import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <div className="w-screen h-screen flex items-center justify-center bg-gray-500 md:flex md:flex-col">
+    <div className="w-screen h-screen flex items-center justify-center bg-green-100 md:flex md:flex-col">
       <h1 className="hidden md:block font-uberBold text-black text-6xl">
         Uber clone
       </h1>

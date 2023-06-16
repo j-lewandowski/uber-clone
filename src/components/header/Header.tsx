@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import HeaderItem from './HeaderItem';
 
 import rideIcon from '../../assets/images/rideIcon.webp';
@@ -11,8 +10,6 @@ import { IoFastFood } from 'react-icons/io5';
 // Add smooth transition between options
 
 function Header() {
-  const [menuOption, setMenuOption] = useState<number>(1);
-
   return (
     <header className="font-uberBold flex w-full justify-center mt-10 mb-3 z-10 pb-4 shadow-sm">
       <HeaderItem text="Rides" image={<FaCar />} index={1} />
