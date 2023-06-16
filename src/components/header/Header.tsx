@@ -14,7 +14,7 @@ function Header() {
   const [menuOption, setMenuOption] = useState<number>(1);
 
   return (
-    <header className="font-uberBold flex w-full justify-center my-10 z-10 pb-4 shadow-sm">
+    <header className="font-uberBold flex w-full justify-center mt-10 mb-3 z-10 pb-4 shadow-sm">
       <HeaderItem text="Rides" image={<FaCar />} index={1} />
       <HeaderItem text="Delivery" image={<IoFastFood />} index={2} />
     </header>

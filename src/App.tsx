@@ -6,6 +6,7 @@ import Services from './pages/Services';
 import Activity from './pages/Activity';
 import Account from './pages/Account';
 import { HomePageProvider } from './context/HomePageContext';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/activity" element={<Activity />} />
             <Route path="/account" element={<Account />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Navbar />
         </BrowserRouter>
