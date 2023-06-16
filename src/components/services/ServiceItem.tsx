@@ -6,13 +6,15 @@ interface propTypes {
   icon: ReactNode;
   promo: boolean;
   path?: string;
+  span?: boolean;
 }
 
-function SuggestionItem({
+function ServiceItem({
   name,
   icon,
   promo,
   path = '/pageNotFound',
+  span,
 }: propTypes) {
   return (
     <Link to={path}>
@@ -28,4 +30,4 @@ function SuggestionItem({
     </Link>
   );
 }
-export default SuggestionItem;
+export default ServiceItem;

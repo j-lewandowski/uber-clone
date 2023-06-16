@@ -14,7 +14,7 @@ function Home() {
   const { menuOption } = useContext(HomePageContext) as contextTypes;
 
   return (
-    <div className="h-full w-full ">
+    <div className="h-full w-full z-0">
       <Header />
       {menuOption === 1 ? (
         <Rides />

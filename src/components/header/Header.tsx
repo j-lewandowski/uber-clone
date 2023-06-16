@@ -11,7 +11,7 @@ import { IoFastFood } from 'react-icons/io5';
 
 function Header() {
   return (
-    <header className="font-uberBold flex w-full justify-center mt-10 mb-3 z-10 pb-4 shadow-sm">
+    <header className="font-uberBold flex w-full justify-center pt-10 mb-3 z-50 top-0 pb-4 shadow-sm absolute bg-white md:rounded-t-3xl">
       <HeaderItem text="Rides" image={<FaCar />} index={1} />
       <HeaderItem text="Delivery" image={<IoFastFood />} index={2} />
     </header>

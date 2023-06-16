@@ -7,7 +7,7 @@ import { BiReceipt } from 'react-icons/bi';
 
 function Navbar() {
   return (
-    <nav className="w-full absolute bottom-4 border-t-2 border-gray-400 font-uber z-50">
+    <nav className="w-full bg-white absolute bottom-0 pb-2 border-t-2 border-gray-400 font-uber z-50 rounded-b-3xl">
       <div className="flex justify-around items-center pt-4">
         <NavbarItem
           name="Home"

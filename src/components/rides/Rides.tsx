@@ -4,7 +4,7 @@ import MoreWaysToUseUber from './moreWaysToUseUber/MoreWaysToUseUber';
 
 function Rides() {
   return (
-    <div>
+    <div className="pt-28 pb-16 h-full w-full overflow-y-auto no-scrollbar">
       <SearchBar />
       <Suggestions />
       <MoreWaysToUseUber />
