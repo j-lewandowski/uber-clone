@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import Activity from './pages/Activity';
 import Account from './pages/Account';
+import { HomePageProvider } from './context/HomePageContext';
 
 function App() {
   return (
@@ -15,7 +16,14 @@ function App() {
       <div className="w-screen h-full max-w-md bg-white md:max-h-[900px] md:m-8 md:rounded-3xl md:border-4 md:border-black relative">
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route
+              path="/"
+              element={
+                <HomePageProvider>
+                  <Home />
+                </HomePageProvider>
+              }
+            />
             <Route path="/services" element={<Services />} />
             <Route path="/activity" element={<Activity />} />
             <Route path="/account" element={<Account />} />

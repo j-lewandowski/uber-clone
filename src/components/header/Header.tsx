@@ -14,21 +14,9 @@ function Header() {
   const [menuOption, setMenuOption] = useState<number>(1);
 
   return (
-    <header className="absolute font-uberBold flex w-full justify-center my-10">
-      <HeaderItem
-        text="Rides"
-        image={<FaCar />}
-        menuOption={menuOption}
-        index={1}
-        changeMenuOption={setMenuOption}
-      />
-      <HeaderItem
-        text="Delivery"
-        image={<IoFastFood />}
-        menuOption={menuOption}
-        index={2}
-        changeMenuOption={setMenuOption}
-      />
+    <header className="font-uberBold flex w-full justify-center my-10 z-10 pb-4 shadow-sm">
+      <HeaderItem text="Rides" image={<FaCar />} index={1} />
+      <HeaderItem text="Delivery" image={<IoFastFood />} index={2} />
     </header>
   );
 }

@@ -1,20 +1,22 @@
-import { ReactNode, useState } from 'react';
+import { ReactNode, useContext } from 'react';
+import HomePageContext from '../../context/HomePageContext';
 
 interface Props {
   text: string;
   image: ReactNode;
-  menuOption: number;
   index: number;
-  changeMenuOption: React.Dispatch<React.SetStateAction<number>>;
 }
 
-function HeaderItem({
-  text,
-  image,
-  menuOption,
-  index,
-  changeMenuOption,
-}: Props) {
+interface contextTypes {
+  menuOption: number;
+  changeMenuOption: (index: number) => void;
+}
+
+function HeaderItem({ text, image, index }: Props) {
+  const { menuOption, changeMenuOption } = useContext(
+    HomePageContext
+  ) as contextTypes;
+
   return (
     <div
       className={`flex text-2xl items-center space-x-1 hover:cursor-pointer px-2 relative ${
